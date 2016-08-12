@@ -1,0 +1,22 @@
+{
+  "name": "itemplate",
+  "description": "iTemplate By Whiteboks",
+  "main": "index.js",
+  "authors": [
+    "BennyLEP <bendo01@gmail.com>"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-labelauty": "labelauty#^1.1.0",
+    "jquery-ui": "jquery/jquery-ui#1.11.4",
+    "animatewithsass": "^3.2.2"
+  }
+}

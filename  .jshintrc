@@ -1,0 +1,7 @@
+{
+    "globals" : {
+        "require": false
+    },
+    "expr": true,
+    "-W100": true
+}

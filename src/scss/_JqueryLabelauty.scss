@@ -1,0 +1,104 @@
+$jquery-labelauty-image-path: "../../img/jquery_labelauty/" !default;
+$radius : 3px !default;
+$black: #111111 !default;
+$grey-darker: #222324 !default;
+$grey-dark: #69707a !default;
+$grey: #aeb1b5 !default;
+$grey-light: #d3d6db !default;
+$grey-lighter: #f5f7fa !default;
+$white: #ffffff !default;
+$blue: #42afe3 !default;
+$green: #97cd76 !default;
+$orange: #f68b39 !default;
+$purple: #847bb9 !default;
+$red: #ed6c63 !default;
+$turquoise: #1fc8db !default;
+$yellow: #fce473 !default;
+
+$primary: $turquoise !default;
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $grey-lighter !default;
+$dark: $grey-dark !default;
+$text: $grey-dark !default;
+
+input.labelauty {
+  + label {
+    ::selection, ::-moz-selection {
+      background-color: rgba(255, 255, 255, 0);
+    }
+    display: table;
+    font-size: 11px;
+    padding: 10px;
+    background-color: #efefef;
+    color: #b3b3b3;
+    cursor: pointer;
+    border-radius: $radius;
+    transition: background-color 0.25s;
+    user-select: none;
+    > span {
+      &.labelauty-unchecked, &.labelauty-checked {
+        display: inline-block;
+        line-height: 16px;
+        vertical-align: bottom;
+      }
+      &.labelauty-unchecked-image, &.labelauty-checked-image {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: bottom;
+        background-repeat: no-repeat;
+        background-position: left center;
+        transition: background-image 0.5s linear;
+      }
+      &.labelauty-unchecked-image + span.labelauty-unchecked, &.labelauty-checked-image + span.labelauty-checked {
+        margin-left: 7px;
+      }
+    }
+  }
+  display: none !important;
+  &:not(:checked) {
+    &:not([disabled]) + label:hover {
+      background-color: #eaeaea;
+      color: #a7a7a7;
+    }
+    + label > span {
+      &.labelauty-checked-image, &.labelauty-checked {
+        display: none;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      background-color: $info;
+      color: $white;
+    }
+    &:not([disabled]) + label:hover {
+      background-color: $primary;
+    }
+    + label > span {
+      &.labelauty-unchecked-image, &.labelauty-unchecked {
+        display: none;
+      }
+      &.labelauty-checked {
+        display: inline-block;
+      }
+    }
+  }
+  &.no-label:checked + label > span.labelauty-checked {
+    display: block;
+  }
+  &[disabled] + label {
+    opacity: 0.5;
+  }
+  + label > span {
+    &.labelauty-unchecked-image {
+      background-image: url( '#{$jquery-labelauty-image-path}input-unchecked.png' );
+    }
+    &.labelauty-checked-image {
+      background-image: url( '#{$jquery-labelauty-image-path}input-checked.png' );
+    }
+  }
+}

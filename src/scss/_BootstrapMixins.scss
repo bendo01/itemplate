@@ -1,0 +1,89 @@
+@mixin nav-divider($color: #e5e5e5) {
+  height: 1px;
+  margin: ($spacer-y / 2) 0;
+  overflow: hidden;
+  background-color: $color;
+}
+
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin border-top-radius($radius) {
+  @if $enable-rounded {
+    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+  }
+}
+
+@mixin border-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+@mixin hover {
+  @if $enable-hover-media-query {
+    // See Media Queries Level 4: http://drafts.csswg.org/mediaqueries/#hover
+    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
+    @media (hover: hover) {
+      &:hover { @content }
+    }
+  }
+  @else {
+    &:hover { @content }
+  }
+}
+
+@mixin hover-focus {
+  @if $enable-hover-media-query {
+    &:focus { @content }
+    @include hover { @content }
+  }
+  @else {
+    &:focus,
+    &:hover {
+      @content
+    }
+  }
+}
+
+@mixin plain-hover-focus {
+  @if $enable-hover-media-query {
+    &,
+    &:focus {
+      @content
+    }
+    @include hover { @content }
+  }
+  @else {
+    &,
+    &:focus,
+    &:hover {
+      @content
+    }
+  }
+}
+
+@mixin hover-focus-active {
+  @if $enable-hover-media-query {
+    &:focus,
+    &:active {
+      @content
+    }
+    @include hover { @content }
+  }
+  @else {
+    &:focus,
+    &:active,
+    &:hover {
+      @content
+    }
+  }
+}
+
+@mixin reset-filter() {
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
+}

@@ -1,0 +1,13 @@
+.breadcrumb {
+  list-style: none;
+  font-size: 13px;
+  li {
+    display: inline-block;
+    + li:before {
+      content: ' » ';
+    }
+    i {
+      padding-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.vegeta-menu {
+
+  background-color: $background-menu-color;
+  position: fixed;
+  transition: background .5s linear;
+
+  .vegeta-menu-section {
+    background-color: $background-menu-color;
+    padding: 0;
+  }
+}
+
+.vegeta-menu-vertical {
+
+  height: 100%;
+  top: 0;
+  width: 270px;
+  z-index: 1000;
+}
+
+.vegeta-menu-horizontal {
+
+  height: 150px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-list {
+  a {
+    padding: 5px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  li {
+    ul {
+      margin-left: 13px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.sub-menu-list {
+  a {
+    padding: 5px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  li {
+    ul {
+      padding-left: 10px;
+    }
+  }
+}
+
+// Vertical menu that slides from the left or right
+
+.vegeta-menu-left {
+  left: -270px;
+}
+
+.vegeta-menu-right {
+  right: -270px;
+}
+
+.vegeta-menu-left--open {
+  left: 0;
+}
+
+.vegeta-menu-right--open {
+  right: 0;
+}
+
+.vegeta-menu-top {
+  top: -150px;
+}
+
+.vegeta-menu-bottom {
+  bottom: -150px;
+}
+
+.vegeta-menu-top--open {
+  top: 0;
+}
+
+.vegeta-menu-bottom--open {
+  bottom: 0;
+}
+
+// Push classes applied to the body
+
+.vegeta-menu-push {
+
+  left: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.vegeta-menu-push--to-right {
+  left: 270px;
+}
+
+.vegeta-menu-push--to-left {
+  left: -270px;
+}
+
+// Transitions
+.vegeta-menu,
+.vegeta-menu--push {
+
+  transition: all .3s ease;
+}
+
+// Example media queries
+@media screen and (max-width: 55.1875em){
+  .vegeta-menu-horizontal {
+
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .vegeta-menu-top {
+
+    top: -110px;
+  }
+
+  .vegeta-menu-bottom {
+    bottom: -110px;
+  }
+}
+
+@media screen and (max-height: 26.375em){
+  .vegeta-menu-vertical {
+    width: 270px;
+  }
+
+  .vegeta-menu-left.vegeta-menu-left--open {
+    left: 0;
+  }
+
+  .vegeta-menu-left,
+  .vegeta-menu-push--to-left {
+    left: -270px;
+  }
+
+
+  //.vegeta-menu-right {
+    //right: -270px;
+  //}
+
+  .vegeta-menu-push--to-right {
+    left: 270px;
+  }
+}

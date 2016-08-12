@@ -1,0 +1,8 @@
+.media {
+  &.media-sidebar {
+    .media,
+    & + .media {
+      border-top: 0;
+    }
+  }
+}
