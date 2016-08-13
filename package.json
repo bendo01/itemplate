@@ -1,7 +1,7 @@
 {
-  "name": "itemplate",
+  "name": "itemplate_bulma_css_framework_admin_template",
   "version": "1.0.0",
-  "description": "iTemplate By Whiteboks",
+  "description": "iTemplate Using Bulma CSS Framework By Benny Leonard Enrico Panggabean",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,10 @@
   "keywords": [
     "multi purpose",
     "admin",
-    "template"
+    "template",
+    "bulma",
+    "css",
+    "framework"
   ],
   "author": "BennyLEP <bendo01@gmail.com>",
   "devDependencies": {
@@ -77,5 +80,15 @@
     "tether": "^1.3.2",
     "vegeta": "^2.0.0",
     "weather-icons": "github:erikflowers/weather-icons"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendo01/itemplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendo01/itemplate/issues"
+  },
+  "homepage": "https://github.com/bendo01/itemplate#readme"
 }
