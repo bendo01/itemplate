@@ -6782,6 +6782,22 @@ a.panel-block:hover {
 .menu-list .sub-menu-list ul {
   margin: 13px; }
 
+.breadcrumb {
+  list-style: none;
+  font-size: 13px; }
+  .breadcrumb li {
+    display: inline-block; }
+    .breadcrumb li + li:before {
+      content: ' » '; }
+    .breadcrumb li i {
+      padding-top: 2px; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .is-active {
+  display: inherit; }
+
 .color-is-black {
   color: #111 !important; }
 
