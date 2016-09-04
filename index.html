@@ -3,11 +3,138 @@
 
 <head>
     <meta charset="utf-8">
-    <title>iTemplate</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itemplate</title>
+    <!-- Start Main Css -->
+    <!-- <link href="css/all.css" rel="stylesheet"> -->
+    <link href="public/css/app.css" rel="stylesheet">
+    <!-- End Main Css -->
+    <link rel="apple-touch-icon" sizes="57x57" href="public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="public/img/favicon/manifest.json">
+    <link rel="shortcut icon" href="public/img/favicon/favicon.ico">
+    <meta name="msapplication-TileImage" content="public/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="public/img/favicon/browserconfig.xml">
 </head>
 
 <body>
-
+    <aside class="aside sliderright-transition right" id="aside-menu" style="display:none;">
+        <div class="aside-dialog">
+            <div class="aside-content">
+                <div class="aside-header">
+                    <a href="javascript:void(0)" class="is-pulled-right" id="menu-close"><i class="fa fa-fw fa-close"></i></a>
+                    <h4 class="aside-title">Menu</h4>
+                </div>
+                <div class="aside-body">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            General
+                        </p>
+                        <ul class="menu-list">
+                            <li class="single-list"><a href="javascript:void(0)"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a></li>
+                            <li class="single-list"><a href="javascript:void(0)">Customers</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Administration
+                        </p>
+                        <ul class="menu-list">
+                            <li class="single-list"><a href="javascript:void(0)">Team Settings</a></li>
+                            <li class="sub-menu-list">
+                                <a href="javascript:void(0)" class="show-menu">First Level</a>
+                                <ul class="menu-list hide">
+                                    <li class="sub-menu-list">
+                                        <a href="javascript:void(0)" class="show-menu">Second Level</a>
+                                        <ul class="menu-list hide">
+                                            <li class="sub-menu-list">
+                                                <a href="javascript:void(0)" class="show-menu">Third Level</a>
+                                                <ul class="menu-list hide">
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.1</a></li>
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.2</a></li>
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 1.2</a></li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.2</a></li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 1</a></li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 2</a></li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="single-list"><a href="javascript:void(0)">Invitations</a></li>
+                            <li class="single-list"><a href="javascript:void(0)">Authentication</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Transactions
+                        </p>
+                        <ul class="menu-list">
+                            <li class="single-list"><a href="javascript:void(0)">Payments</a></li>
+                            <li class="single-list"><a href="javascript:void(0)">Transfers</a></li>
+                            <li class="single-list"><a href="javascript:void(0)">Balance</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li class="single-list"><a href="javascript:void(0)">Team Settings</a></li>
+                            <li class="sub-menu-list">
+                                <a href="javascript:void(0)" class="show-menu">First Level</a>
+                                <ul class="menu-list hide">
+                                    <li class="sub-menu-list">
+                                        <a href="javascript:void(0)" class="show-menu">Second Level</a>
+                                        <ul class="menu-list hide">
+                                            <li class="sub-menu-list">
+                                                <a href="javascript:void(0)" class="show-menu">Third Level</a>
+                                                <ul class="menu-list hide">
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.1</a></li>
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.2</a></li>
+                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 1.2</a></li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.2</a></li>
+                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 1</a></li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 2</a></li>
+                                    <li class="single-list"><a href="javascript:void(0)">Menu 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="single-list"><a href="javascript:void(0)">Invitations</a></li>
+                            <li class="single-list"><a href="javascript:void(0)">Authentication</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- header navigation -->
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="javascript:void(0)" class="nav-item color-is-white">
+                <img src="public/img/whiteboks_small.png" alt="whiteboks logo">&nbsp; xSIA
+            </a>
+        </div>
+        <div class="nav-right">
+            <a class="nav-item" href="javascript:void(0)" id="menu-open">
+                <span class="icon"><i class="fa fa-bars"></i></span>
+            </a>
+        </div>
+    </nav>
+    <!-- end header navigation -->
 </body>
+<script src="public/js/app.js"></script>
 
 </html>
