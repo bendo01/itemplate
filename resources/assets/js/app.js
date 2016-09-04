@@ -1,14 +1,18 @@
-import AsideEventListener from './element/AsideEventListener';
 import Ps from 'perfect-scrollbar';
+import $ from 'domtastic';
 
-(() => { function fn() {
-	// "On document ready" commands:
-    new AsideEventListener('#menu-open', '#menu-close', '#aside-menu');
+$(document).ready(function(){
     let asideMenuHolder = document.getElementById('aside-menu');
     if(asideMenuHolder != null) {
         Ps.initialize(asideMenuHolder);
     }
-};
-  if (document.readyState != 'loading') {fn()}
-  else {document.addEventListener('DOMContentLoaded', fn)}
-})();
+    $('#menu-close').on('click', function(){
+        $('#aside-menu').toggleClass('hide');
+    });
+    $('#menu-open').on('click', function(){
+        $('#aside-menu').toggleClass('hide');
+    });
+    $('.sub-menu-list > .show-menu').on('click', function(){
+        $(this).siblings('.menu-list').toggleClass('hide');
+    });
+});

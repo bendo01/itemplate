@@ -3,6 +3,7 @@
 class AsideEventListener {
 
     constructor(openElementId, closeElementId, menuElementId) {
+        /*
         this.openElementName = openElementId;
         this.closeElementName = closeElementId;
         this.menuElementName = menuElementId;
@@ -20,6 +21,7 @@ class AsideEventListener {
     }
 
     onClick(evt) {
+        /*
         console.log('Ditekan');
         if(this.show == 'false') {
             console.info("In onClick: status aside : open");
@@ -35,6 +37,7 @@ class AsideEventListener {
                 this.menuElement.classList.add("hide");
             }
         }
+        */
     }
 }
 
