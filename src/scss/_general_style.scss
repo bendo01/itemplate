@@ -72,3 +72,19 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.flex-card-container
+{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content:space-around !important;
+}
+
+.card-width-fix {
+    width: 271px !important;
+}
+
+.card-margin-top {
+    margin-top: 29px !important;
+}
