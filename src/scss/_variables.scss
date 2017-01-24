@@ -1,0 +1,110 @@
+$background-menu-color: rgba(37, 49, 56, .9);
+$nav-background: #f5f7fa;
+//$nav-background: #847bb9;
+$allow-table-responsive:yes;
+$radius: 0;
+$radius-small: $radius;
+$radius-large: $radius;
+
+$black: #111;
+$grey-darker: #222324;
+$grey-dark: #69707a;
+$grey: #aeb1b5;
+$grey-light: #d3d6db;
+$grey-lighter: #f5f7fa;
+$white: #fff;
+$blue: rgb(50,115,220);
+$green: rgb(0,209,178);
+$orange: #f68b39;
+$purple: #847bb9;
+$red: rgb(255,56,96);
+$turquoise: #00dffc;
+$yellow: rgb(255,221,87);
+
+$primary: $turquoise;
+$info: $blue;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$light: $grey-lighter;
+$dark: $grey-dark;
+$text: $grey-dark;
+
+$primary-invert: find-color-invert($primary);
+$info-invert: find-color-invert($info);
+$success-invert: find-color-invert($success);
+$warning-invert: find-color-invert($warning);
+$danger-invert: find-color-invert($danger);
+$light-invert: $dark;
+$dark-invert: $light;
+
+$colors: (
+  white: ($white, $black),
+  black: ($black, $white),
+  light: ($light, $light-invert),
+  dark: ($dark, $dark-invert),
+  primary: ($primary, $primary-invert),
+  info: ($info, $info-invert),
+  success: ($success, $success-invert),
+  warning: ($warning, $warning-invert),
+  danger: ($danger, $danger-invert),
+  purple: ($purple, find-color-invert($purple)),
+  orange: ($orange, find-color-invert($orange))
+);
+
+//@debug $colors;
+
+
+$selectize-border-radius: $radius;
+$selectize-font-size: 14px;
+$footer-background:$nav-background;
+
+// Full Calendar Variable
+
+$fc-state-event-color-border: #bfbfbf;
+$fc-state-event-color-down-and-active: #ccc;
+$fc-state-event-color: #e6e6e6;
+$fc-pop-over-background-color: #eee;
+$fc-border-colour: #ddd;
+$fc-color-state-background-color-default: #f5f5f5;
+$fc-color-state-text-color-default: #333;
+$fc-color-non-business: #d7d7d7;
+$fc-pop-over-close-color: #666;
+$fc-font-size: 1em;
+$wi-path: '../fonts';
+$fa-font-path: '../fonts';
+$icheck-image-path: '../img/icheck/square';
+$scroll-up-image-path: '../img/scrollup';
+$section-background: #fff;
+$header-background: #fff;
+$nav-background: #fff;
+$hero-background: #fff;
+$box-background: #fff;
+$table-background: #fff;
+$card-background: #fff;
+$card-width: 300px;
+$card-radius: 3px;
+$colorlists: (
+  black: $black,
+  grey-darker: $grey-darker,
+  grey-dark: $grey-dark,
+  grey:$grey,
+  grey-light: $grey-light,
+  grey-lighter: $grey-lighter,
+  white: $white,
+  blue: $blue,
+  green: $green,
+  orange: $orange,
+  purple: $purple,
+  red:$red,
+  turquoise: $turquoise,
+  yellow: $yellow,
+  primary: $primary,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger
+);
+
+//Aside Variable
+$sidebar-width: 285px !default;

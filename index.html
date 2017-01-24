@@ -1,486 +1,366 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itemplate</title>
-    <!-- Start Main Css -->
-    <!-- <link href="css/all.css" rel="stylesheet"> -->
-    <link href="public/css/app.css" rel="stylesheet">
-    <!-- End Main Css -->
-    <link rel="apple-touch-icon" sizes="57x57" href="public/img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="public/img/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="public/img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="public/img/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="public/img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="public/img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="public/img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="public/img/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="public/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="public/img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="public/img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="public/img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="public/img/favicon/manifest.json">
-    <link rel="shortcut icon" href="public/img/favicon/favicon.ico">
-    <meta name="msapplication-TileImage" content="public/img/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="public/img/favicon/browserconfig.xml">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="author" content="Benny Leonard Enrico Panggabean">
+    <meta name="application-name" content="iTemplate">
+    <meta name="msapplication-TileImage" content="dist/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="dist/img/favicon/browserconfig.xml">
+    <meta name="description" content="iTemplate Website Home Page">
+    <meta name="keywords" content="template, administrator, admin, bulma">
+    <meta name="google-site-verification" content="xjjhX3u2rUjjvMHTctnp2KU4tm7m96eC11MYNqpTfHE">
+    <meta name="msvalidate.01" content="0DF0E21C652E22723705EF606751FF9E">
+    <meta name="yandex-verification" content="01fa61993765259b">
+    <meta name="twitter:card" content="iTemplate" />
+    <meta name="twitter:site" content="@bendo01" />
+    <meta name="twitter:title" content="iTemplate Home Page" />
+    <meta property="og:description" content="iTemplate Website Home Page" />
+    <meta property="og:title" content="Front Page" />
+    <meta property="og:url" content="https://itemplate.ga" />
+    <meta property="og:type" content="articles" />
+    <meta property="og:site_name" content="xSIA" />
+    <meta property="og:image:url" content="img/whiteboks_logo.png" />
+    <meta property="og:image:size" content="256" />
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="dist/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="dist/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="dist/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="dist/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="dist/img/favicon/manifest.json">
+    <link rel="shortcut icon" href="dist/img/favicon//favicon.ico">
+    <link rel="canonical" href="https://itemplate.ga"/>
+    <link href="dist/css/app.css" rel="stylesheet">
+    <title>iTemplate Home</title>
 </head>
-
 <body>
-    <aside class="aside sliderright-transition right hide" id="aside-menu">
-        <div class="aside-dialog">
-            <div class="aside-content">
-                <div class="aside-header">
-                    <a href="javascript:void(0)" class="is-pulled-right" id="menu-close"><i class="fa fa-fw fa-close"></i></a>
-                    <h4 class="aside-title">Menu</h4>
-                </div>
-                <div class="aside-body">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            General
-                        </p>
-                        <ul class="menu-list">
-                            <li class="single-list"><a href="javascript:void(0)"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a></li>
-                            <li class="single-list"><a href="javascript:void(0)">Customers</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Administration
-                        </p>
-                        <ul class="menu-list">
-                            <li class="single-list"><a href="javascript:void(0)">Team Settings</a></li>
-                            <li class="sub-menu-list">
-                                <a href="javascript:void(0)" class="show-menu">First Level</a>
-                                <ul class="menu-list hide">
-                                    <li class="sub-menu-list">
-                                        <a href="javascript:void(0)" class="show-menu">Second Level</a>
-                                        <ul class="menu-list hide">
-                                            <li class="sub-menu-list">
-                                                <a href="javascript:void(0)" class="show-menu">Third Level</a>
-                                                <ul class="menu-list hide">
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.1</a></li>
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.2</a></li>
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 1.2</a></li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.2</a></li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 1</a></li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 2</a></li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="single-list"><a href="javascript:void(0)">Invitations</a></li>
-                            <li class="single-list"><a href="javascript:void(0)">Authentication</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Transactions
-                        </p>
-                        <ul class="menu-list">
-                            <li class="single-list"><a href="javascript:void(0)">Payments</a></li>
-                            <li class="single-list"><a href="javascript:void(0)">Transfers</a></li>
-                            <li class="single-list"><a href="javascript:void(0)">Balance</a></li>
-                        </ul>
-                        <ul class="menu-list">
-                            <li class="single-list"><a href="javascript:void(0)">Team Settings</a></li>
-                            <li class="sub-menu-list">
-                                <a href="javascript:void(0)" class="show-menu">First Level</a>
-                                <ul class="menu-list hide">
-                                    <li class="sub-menu-list">
-                                        <a href="javascript:void(0)" class="show-menu">Second Level</a>
-                                        <ul class="menu-list hide">
-                                            <li class="sub-menu-list">
-                                                <a href="javascript:void(0)" class="show-menu">Third Level</a>
-                                                <ul class="menu-list hide">
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.1</a></li>
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.2</a></li>
-                                                    <li class="single-list"><a href="javascript:void(0)">Menu 3.1.3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 1.2</a></li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.2</a></li>
-                                            <li class="single-list"><a href="javascript:void(0)">Menu 2.3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 1</a></li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 2</a></li>
-                                    <li class="single-list"><a href="javascript:void(0)">Menu 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="single-list"><a href="javascript:void(0)">Invitations</a></li>
-                            <li class="single-list"><a href="javascript:void(0)">Authentication</a></li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <!-- header navigation -->
-    <nav class="nav">
-        <div class="nav-left">
-            <a href="javascript:void(0)" class="nav-item color-is-black">
-                <img src="public/img/whiteboks_small.png" alt="whiteboks logo">&nbsp; xSIA
-            </a>
-        </div>
-        <div class="nav-right">
-            <a class="nav-item" href="javascript:void(0)" id="menu-open">
-                <span class="icon"><i class="fa fa-bars"></i></span>
-            </a>
-        </div>
-    </nav>
-    <!-- end header navigation -->
-    <main>
-        <section class="section">
-            <div class="heading">
-                <h1 class="title">Dashboard</h1>
-                <h2 class="subtitle">Administration Dashboard</h2>
-            </div>
-            <hr>
-            <div class="container is-fluid">
-                <div class="columns">
-                    <div class="column">
-                        <div class="tabs">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_11">Pictures</a>
-                                </li>
-                                <li class="is-active">
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_12">Music</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_13">Videos</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_14">Documents</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-content">
-                            <div class="tab-pane" id="tab_11">
-                                <p>
-                                    1.Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy
-                                    hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
-                                    probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane is-active" id="tab_12">
-                                <p>
-                                    2. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy
-                                    hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
-                                    probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="tab_13">
-                                <p>3. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
-                                    locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk
-                                    vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="tab_14">
-                                <p>
-                                    4. Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.
-                                    Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan,
-                                    sartorial keffiyeh echo park vegan.
-                                </p>
-                            </div>
+    <main class="site-content">
+        <nav class="nav background-is-black-transparent is-fixed-nav">
+           <div class="nav-left">
+               <a href="javascript:void(0)" class="nav-item color-is-white">
+                 <img src="https://xsiav21.dev/img/whiteboks_logo.png" alt="whiteboks logo">&nbsp; iTemplate
+               </a>
+           </div>
+           <div class="nav-right">
+               <a class="nav-item color-is-white" href="javascript:void(0)" id="menu-open" style="margin-left:auto;">
+                   <span class="icon" style="margin-left:auto;"><i class="fa fa-fw fa-bars"></i></span>
+               </a>
+           </div>
+        </nav>
+        <div class="content-margin wrapper">
+            <div class="container is-fluid margin-none">
+                <section class="hero is-large front-has-image-background">
+                    <!-- Hero content: will be in the middle -->
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <h1 class="title color-is-white">
+                                iTemplate Admin
+                            </h1>
+                            <h2 class="subtitle color-is-white">
+                                Based On Bulma CSS Framework
+                            </h2>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="heading">
-                <h1 class="title">Dashboard</h1>
-                <h2 class="subtitle">Administration Dashboard</h2>
-            </div>
-            <hr>
-            <div class="container is-fluid">
-                <div class="columns">
-                    <div class="column">
-                        <div class="tabs">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_21">Pictures</a>
-                                </li>
-                                <li class="is-active">
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_22">Music</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_23">Videos</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="trigger_tab" id="trigger_tab_24">Documents</a>
-                                </li>
-                            </ul>
+                </section>
+                <section class="section background-is-grey-lighter">
+                    <div class="container">
+                        <div class="heading">
+                            <h3 class="title">Tools</h3>
+                            <h4 class="subtitle">tool used by iTemplate</h4>
                         </div>
-                        <div class="tab-content">
-                            <div class="tab-pane" id="tab_21">
-                                <p>
-                                    1.Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy
-                                    hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
-                                    probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane is-active" id="tab_22">
-                                <p>
-                                    2. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy
-                                    hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
-                                    probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="tab_23">
-                                <p>3. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
-                                    locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk
-                                    vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown.
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="tab_24">
-                                <p>
-                                    4. Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.
-                                    Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan,
-                                    sartorial keffiyeh echo park vegan.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="heading">
-                <h1 class="title">Modal</h1>
-                <h2 class="subtitle">Modal Using Default And Sweet Alert</h2>
-            </div>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="../../index.html"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
-                </li>
-                <li>
-                    <i class="fa fa-fw fa-bell-o" aria-hidden="true"></i> Modal
-                </li>
-            </ul>
-            <hr>
-            <!-- start container-->
-            <div class="container is-fluid">
-                <p>
-                    You Can Put Anything On Modal Box Like
-                    <a class="is-link modal-button" data-target="#modal-card">This</a> or like and
-                    <a class="is-link modal-button" data-target="#modal">This</a> and maybe you can put an image inside it like
-                    <a class="is-link modal-button" data-target="#modal-bis">This</a> or you like old modal like
-                    <a class="is-link modal-button" data-target="#modal-ter">This</a> or You can use sweet alerts, example below
-                </p>
-                <br>
-                <!-- START MODAL -->
-                <div id="modal-card" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <div class="box">
-                            <!-- use card widget with full width -->
-                            <div class="card is-fullwidth background-is-yellow">
-                                <header class="card-header">
-                                    <p class="card-header-title">Total Revenue</p>
-                                </header>
-                                <div class="card-content">
-                                    <div class="columns is-mobile">
-                                        <div class="column is-narrow">
-
-                                        </div>
-                                        <div class="column">
-                                            <p class="title">
-                                                4999
-                                            </p>
-                                            <p class="subtitle">
-                                                Revenue today
+                        <hr>
+                        <div class="columns">
+                            <!--start column with width is-3 -->
+                            <div class="column is-3">
+                                <div class="card is-fullwidth">
+                                    <header class="card-header">
+                                        <h5 class="card-header-title flex-is-justify-content-center">Sistem Operasi</h5>
+                                    </header>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="image is-128x128 center-image">
+                                                <img src="https://xsiav21.dev/img/front_technology/centos_logo.png" alt="Centos 7" />
+                                            </div>
+                                            <p class="has-text-justify">
+                                                <br>Appliaksi Berjalan Dengan Sistem Operasi Centos 7 Yang Bersifat Open Source
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--end column with width is-3 -->                            
                         </div>
                     </div>
-                    <button class="modal-close"></button>
-                </div>
-                <!-- END MODAL -->
-                <!-- Modal -->
-                <div id="modal-ter" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head">
-                            <p class="modal-card-title">Modal Confirm Action</p>
-                            <button class="delete"></button>
-                        </header>
-                        <section class="modal-card-body">
-                            <div class="content">
-                                <h1>Hello World</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin
-                                    vel erat vel, interdum mattis neque.</p>
-                                <h2>Second level</h2>
-                                <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem
-                                    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-                                <ul>
-                                    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-                                    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-                                    <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-                                    <li>Ut non enim metus.</li>
-                                </ul>
-                                <h3>Third level</h3>
-                                <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
-                                <ol>
-                                    <li>Donec blandit a lorem id convallis.</li>
-                                    <li>Cras gravida arcu at diam gravida gravida.</li>
-                                    <li>Integer in volutpat libero.</li>
-                                    <li>Donec a diam tellus.</li>
-                                    <li>Aenean nec tortor orci.</li>
-                                    <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
-                                    <li>Vivamus maximus ultricies pulvinar.</li>
-                                </ol>
-                                <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
-                                <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
-                                <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
-                                <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-                                <h4>Fourth level</h4>
-                                <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
-                                <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-                                <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique,
-                                    leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec
-                                    nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-                                <h5>Fifth level</h5>
-                                <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue
-                                    laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
-                                <h6>Sixth level</h6>
-                                <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada
-                                    ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
-                            </div>
-                        </section>
-                        <footer class="modal-card-foot">
-                            <a class="button is-success">Save changes</a>
-                            <a class="button">Cancel</a>
-                        </footer>
-                    </div>
-                </div>
-                <!-- End Modal -->
-                <!-- START MODAL -->
-                <div id="modal" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <div class="box">
-                            <article class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
-                                        <img src="../../img/img_avatar2.png" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                        </p>
-                                    </div>
-                                    <nav class="level">
-                                        <div class="level-left">
-                                            <a class="level-item">
-                                                <span class="icon is-small"><i class="fa fa-fw fa-reply"></i></span>
-                                            </a>
-                                            <a class="level-item">
-                                                <span class="icon is-small"><i class="fa fa-fw fa-retweet"></i></span>
-                                            </a>
-                                            <a class="level-item">
-                                                <span class="icon is-small"><i class="fa fa-fw fa-heart"></i></span>
-                                            </a>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <button class="modal-close"></button>
-                </div>
-                <!-- END MODAL -->
-                <!-- START MODAL -->
-                <div id="modal-bis" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <div class="image is-1by1">
-                            <img src="../../img/img_avatar2.png">
-                        </div>
-                    </div>
-                    <button class="modal-close"></button>
-                </div>
-                <!-- END MODAL -->
+                </section>
             </div>
-            <!-- end container-->
-        </section>
-        <section class="section">
-            <div class="heading">
-                <h1 class="title">Notification</h1>
-                <h2 class="subtitle">List Of Notification</h2>
-            </div>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="../../index.html"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
-                </li>
-                <li>
-                    <i class="fa fa-fw fa-flag-o" aria-hidden="true"></i> Notification
-                </li>
-            </ul>
-            <hr>
-            <!-- start container-->
+        </div>
+        <footer class="footer">
             <div class="container is-fluid">
-                <div class="notification">
-                    <button class="delete"></button>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-primary">
-                    <button class="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-info">
-                    <button class="delete"></button>
-                    Info lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-success">
-                    <button class="delete"></button>
-                    Success lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-warning">
-                    <button class="delete"></button>
-                    Warning lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-danger">
-                    <button class="delete"></button>
-                    Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-black">
-                    <button class="delete"></button>
-                    Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-purple">
-                    <button class="delete"></button>
-                    Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="notification is-orange">
-                    <button class="delete"></button>
-                    Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>iTemplate</strong> &copy; 2016-2017 Develop By B.L.E.P
+                    </p>
+                    <p>
+                        <a class="icon" href="https://twitter.com/bendo01" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon" href="https://web.facebook.com/whiteboks" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon" href="https://plus.google.com/118005283534040499189" target="_blank">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon" href="https://id.linkedin.com/in/benny-leonard-enrico-panggabean-a480a024" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
-            <!-- end container-->
-        </section>
+        </footer>
     </main>
-</body>
-<script src="public/js/app.js"></script>
+    <aside class="background-is-black-transparent side-navigation right hide" id="side-navigation">
+       <div class="tabs is-centered margin-bottom-none background-is-black-transparent" style="min-height:49px;">
+           <ul style="border-bottom:0px;">
+               <li class="is-active">
+                   <a class="trigger_tab color-is-purple" id="trigger_tab_menu" style="border-bottom: 0px;"><i class="fa fa-fw fa-map-signs" aria-hidden="true"></i></a>
+               </li>
+               <li>
+                   <a class="trigger_tab color-is-turquoise" id="trigger_tab_asisa" style="border-bottom: 0px;"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i></a>
+               </li>
 
+           </ul>
+           <a href="javascript:void(0)" class="close-side-bar-button color-is-danger" id="menu-close"><i class="fa fa-fw fa-close" aria-hidden="true"></i></a>
+       </div>
+       <div class="tab-content">
+           <div class="tab-pane is-active" id="tab_menu">
+               <div class="container-tab" id="container-menu">
+                   <aside class="menu">
+                        <ul class="menu-list">
+                           <li class="single-list"><a href="https://xsiav21.dev"><i class="fa fa-fw fa-home"></i> Halaman Depan</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/blog/artikel"><i class="fa fa-fw fa-newspaper-o"></i> Artikel</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/perencanaan"><i class="fa fa-fw fa-history"></i>Perencanaan</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/lokasi/propinsi"><i class="fa fa-fw fa-map-marker"></i>Daftar Propinsi</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/institusi/master/institusi"><i class="fa fa-fw fa-bank"></i> Daftar Institusi</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/program-studi"><i class="fa fa-fw fa-building-o"></i> Daftar Program Studi</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/publikasi"><i class="fa fa-fw fa-book"></i> Daftar Publikasi Ilmiah</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/rumpun-ilmu"><i class="fa fa-fw fa-sitemap"></i> Rumpun Ilmu</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/disclaimer"><i class="fa fa-fw fa-certificate"></i> Disclaimer</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/website-terms-and-condition"><i class="fa fa-fw fa-certificate"></i> Terms And Conditions</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/privacy-policy"><i class="fa fa-fw fa-certificate"></i> Privacy Policy</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/registration/create"><i class="fa fa-fw fa-user-plus"></i> Registrasi</a></li>
+                           <li class="single-list"><a href="https://xsiav21.dev/login"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
+
+                       </ul>
+                   </aside>
+               </div>
+           </div>
+           <div class="tab-pane" id="tab_asisa">
+               <div id="asisa-conversation">
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-left">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/default_avatar_large.png" alt="Image">
+                                   </figure>
+                               </div>
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">Human</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">ASISA</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                               <div class="media-right">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-left">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/default_avatar_large.png" alt="Image">
+                                   </figure>
+                               </div>
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">Human</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">ASISA</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                               <div class="media-right">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-left">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/default_avatar_large.png" alt="Image">
+                                   </figure>
+                               </div>
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">Human</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card is-fullwidth background-none border-none">
+                       <div class="card-content">
+                           <div class="media">
+                               <div class="media-content">
+                                   <p class="title is-5 color-is-white">ASISA</p>
+                                   <p class="subtitle is-6 color-is-white">01-01-2017 11:00:00</p>
+                               </div>
+                               <div class="media-right">
+                                   <figure class="image is-32x32">
+                                       <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                   </figure>
+                               </div>
+                           </div>
+                           <div class="content">
+                               <p class="color-is-grey-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                               <div class="columns">
+                                   <div class="column">
+                                       <div class="card is-fullwidth">
+                                           <div class="card-content">
+                                               <div class="media">
+                                                   <div class="media-left">
+                                                       <figure class="image is-32x32">
+                                                           <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                                       </figure>
+                                                   </div>
+                                                   <div class="media-content">
+                                                       <p class="title is-5">ASISA</p>
+                                                       <p class="subtitle is-6">01-01-2017 11:00:00</p>
+                                                   </div>
+                                                   <div class="media-right">
+                                                       <figure class="image is-32x32">
+                                                           <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                                       </figure>
+                                                   </div>
+                                               </div>
+                                               <div class="content">
+                                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="columns">
+                                   <div class="column">
+                                       <div class="card is-fullwidth">
+                                           <div class="card-content">
+                                               <div class="media">
+                                                   <div class="media-left">
+                                                       <figure class="image is-32x32">
+                                                           <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                                       </figure>
+                                                   </div>
+                                                   <div class="media-content">
+                                                       <p class="title is-5">ASISA</p>
+                                                       <p class="subtitle is-6">01-01-2017 11:00:00</p>
+                                                   </div>
+                                                   <div class="media-right">
+                                                       <figure class="image is-32x32">
+                                                           <img src="https://xsiav21.dev/img/robot/bot2.png" alt="Image">
+                                                       </figure>
+                                                   </div>
+                                               </div>
+                                               <div class="content">
+                                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div id="asisa-wrapper-input" class="asisa-chatbox">
+                   <div class="columns">
+                       <div class="column">
+                           <div class="card background-none border-none is-fullwidth">
+                               <div class="card-content">
+                                   <div class="control">
+                                       <textarea id="asisa-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="Tanya ASISA" style="resize:none; max-height: 70px;"></textarea>
+                                   </div>
+                                   <div class="control flex-is-justify-content-end">
+                                       <div class="columns is-gapless">
+                                           <div class="column">
+                                               <a class="button is-primary is-fullwidth"><i class="fa fa-fw fa-commenting"></i></a>
+                                           </div>
+                                           <div class="column is-narrow">
+                                               <a class="button is-info"><i class="fa fa-fw fa-microphone"></i></a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </aside>
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/vendor/jquery.slimscroll.min.js"></script>
+    <script src="dist/js/vendor/autosize.min.js"></script>
+    <script type="text/javascript">$(document).ready(function() { $('.container-tab').slimScroll({ height: '93vh' });});</script>
+    <script type="text/javascript">$(document).ready(function() { $('#asisa-conversation').slimScroll({ height: '80vh' });});</script>
+</body>
 </html>

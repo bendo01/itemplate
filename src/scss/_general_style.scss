@@ -1,0 +1,74 @@
+body {
+    //background-color: #9055A2;
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}
+.wrapper {
+    min-height: 70vh;
+}
+
+.content-margin {
+    /*margin-top: 13px !important;*/
+    /*margin-bottom: 50px !important;*/
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.is-fixed-nav { position: fixed !important; top: 0; left: 0; right: 0; }
+
+.front-has-image-background {
+    background: #fc00ff; /* fallback for old browsers */
+    background: linear-gradient(to left, #fc00ff , #00dbde); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login-has-image-background {
+
+    background: #DA22FF; /* fallback for old browsers */
+    background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.content {
+  .normal-list {
+    list-style-type: lower-alpha;
+  }
+}
+
+.breadcrumb {
+  list-style: none;
+  font-size: 13px;
+  li {
+    display: inline-block;
+    + li:before {
+      content: ' » ';
+    }
+    i {
+      padding-top: 2px;
+    }
+  }
+}
+
+.section--auto-height {
+    min-height: 78vh;
+}
+
+.columns--auto-height {
+    min-height: 51vh;
+}
+
+.first-section {
+    margin-top: 28px;
+}
+
+.asisa-chatbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
