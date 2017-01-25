@@ -180,14 +180,14 @@
                                             <!-- use card widget with full width -->
                                             <div class="card is-fullwidth">
                                                 <header class="card-header">
-                                                    <p class="card-header-title flex-is-justify-content-center">Sansha Targeyen</p>
+                                                    <p class="card-header-title flex-is-justify-content-center">Khalesi Drogon</p>
                                                 </header>
                                                 <div class="card-content">
                                                     <div class="image is-128x128 circular-square center-image">
-                                                        <img src="dist/img/user/3.jpg" alt="3">
+                                                        <img src="dist/img/user/9.jpg" alt="9">
                                                     </div>
                                                     <hr>
-                                                    <canvas id="lineChart" height="75" width="100%"></canvas>
+                                                    <div id="echart_radar" style="height:225px; width:100%;"></div>
                                                 </div>
                                             </div>
                                             <!-- end card -->
@@ -1061,6 +1061,51 @@
             ]
         };
         barChart.setOption(option);
+        var radarChart = echarts.init(document.getElementById('echart_radar'), 'macarons');
+        var option = {
+            title : {
+                show: false
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                show: false
+            },
+            toolbox: {
+                show : false
+            },
+            polar : [
+               {
+                   indicator : [
+                       { text: 'sales', max: 6000},
+                       { text: 'Administration', max: 16000},
+                       { text: 'Information Techology', max: 30000},
+                       { text: 'Customer Support', max: 38000},
+                       { text: 'Development', max: 52000},
+                       { text: 'Marketing', max: 25000}
+                    ]
+                }
+            ],
+            calculable : true,
+            series : [
+                {
+                    name: 'Budget vs spending',
+                    type: 'radar',
+                    data : [
+                        {
+                            value : [4300, 10000, 28000, 35000, 50000, 19000],
+                            name : 'Allocated Budget'
+                        },
+                         {
+                            value : [5000, 14000, 28000, 31000, 42000, 21000],
+                            name : 'Actual Spending'
+                        }
+                    ]
+                }
+            ]
+        };
+        radarChart.setOption(option);
         /* Start echart */
         var echartGaugeCPUChart = echarts.init(document.getElementById('echart_gauge_cpu'), 'macarons');
         var optionGaugeCPUChart = {
