@@ -1,0 +1,31 @@
+.card-border-danger {
+    box-shadow: 0 2px 3px $red,0 0 0 1px $red;
+}
+
+.card-border-warning {
+    box-shadow: 0 2px 3px $yellow,0 0 0 1px $yellow;
+}
+
+.card-border-info {
+    box-shadow: 0 2px 3px $blue,0 0 0 1px $blue;
+}
+
+.card-border-success {
+    box-shadow: 0 2px 3px $green,0 0 0 1px $green;
+}
+
+.card-border-primary {
+  box-shadow: 0 2px 3px $turquoise,0 0 0 1px $turquoise;
+}
+
+.card-border-orange {
+  box-shadow: 0 2px 3px $orange,0 0 0 1px $orange;
+}
+
+.card-border-purple {
+  box-shadow: 0 2px 3px $purple,0 0 0 1px $purple;
+}
+
+.card-border-grey-dark {
+  box-shadow: 0 2px 3px $grey-dark,0 0 0 1px $grey-dark;
+}

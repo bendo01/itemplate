@@ -1,0 +1,356 @@
+.flex-is-justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.flex-is-justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.flex-is-justify-content-center {
+  justify-content: center !important;
+}
+
+.flex-is-justify-content-space-between {
+  justify-content: space-between !important;
+}
+
+.flex-is-justify-content-space-around {
+  justify-content: space-around !important;
+}
+
+.flex-is-wrap-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+.flex-is-wrap {
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap !important;
+}
+
+.flex-is-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
+.flex-is-direction-row {
+  flex-direction: row !important;
+}
+
+.flex-is-direction-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.flex-is-direction-column {
+  flex-direction: column !important;
+}
+
+.flex-is-direction-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.flex-is-align-items-stretch {
+  align-items: stretch !important;
+}
+
+.flex-is-align-items-baseline {
+  align-items: baseline;
+}
+
+.flex-is-align-items-center {
+  align-items: center !important;
+}
+
+.flex-is-align-items-start {
+  align-items: flex-start !important;
+}
+
+.flex-is-align-items-end {
+  align-items: flex-end !important;
+}
+
+.flex-is-align-content-stretch {
+  align-content: stretch !important;
+}
+
+.flex-is-align-content-center {
+  align-content: center !important;
+}
+
+.flex-is-align-content-end {
+  align-content: flex-end !important;
+}
+
+.flex-is-align-content-start {
+  align-content: flex-start !important;
+}
+
+.flex-is-align-content-space-around {
+  align-content:space-around !important;
+}
+
+.flex-is-align-content-space-between {
+  align-content:space-between !important;
+}
+
+.flex-is-align-self-start {
+  align-self: flex-start !important;
+}
+
+.flex-is-align-self-end {
+  align-self: flex-end !important;
+}
+
+.flex-is-align-self-center {
+  align-self: center !important;
+}
+
+.flex-is-align-self-baseline {
+  align-self: baseline !important;
+}
+
+.flex-is-align-self-auto {
+  align-self: auto !important;
+}
+
+.flex-is-display-inline {
+  display:inline-flex !important;
+}
+
+.color-is-black {
+  color: $black !important;
+}
+
+.color-is-grey-darker {
+  color: $grey-darker !important;
+}
+
+.color-is-grey-dark {
+  color: $grey-dark !important;
+}
+
+.color-is-grey {
+  color: $grey !important;
+}
+
+.color-is-grey-light {
+  color: $grey-light !important;
+}
+
+.color-is-grey-lighter {
+  color: $grey-lighter !important;
+}
+
+.color-is-white {
+  color: $white !important;
+}
+
+.color-is-blue {
+  color: $blue !important;
+}
+
+.color-is-info {
+  color: $blue !important;
+}
+
+.color-is-green {
+  color: $green !important;
+}
+
+.color-is-success {
+  color: $green !important;
+}
+
+.color-is-orange {
+  color: $orange !important;
+}
+
+.color-is-purple {
+  color: $purple !important;
+}
+
+.color-is-red {
+  color: $red !important;
+}
+
+.color-is-danger {
+  color: $red !important;
+}
+
+.color-is-turquoise {
+  color: $turquoise !important;
+}
+
+.color-is-yellow {
+  color: $yellow !important;
+}
+
+.color-is-warning {
+  color: $yellow !important;
+}
+
+.background-none {
+
+  background: none !important;
+}
+
+.background-is-black {
+  background-color: $black !important;
+}
+
+.background-is-black-transparent {
+  background-color: rgba(37, 49, 56, .9) !important;
+}
+
+.background-is-grey-darker {
+  background-color: $grey-darker !important;
+}
+
+.background-is-grey-dark {
+  background-color: $grey-dark !important;
+}
+
+.background-is-grey {
+  background-color: $grey !important;
+}
+
+.background-is-grey-light {
+  background-color: $grey-light !important;
+}
+
+.background-is-grey-lighter {
+  background-color: $grey-lighter !important;
+}
+
+.background-is-white {
+  background-color: $white !important;
+}
+
+.background-is-blue {
+  background-color: $blue !important;
+}
+
+.background-is-info {
+  background-color: $blue !important;
+}
+
+.background-is-green {
+  background-color: $green !important;
+}
+
+.background-is-success {
+  background-color: $green !important;
+}
+
+.background-is-orange {
+  background-color: $orange !important;
+}
+
+.background-is-purple {
+  background-color: $purple !important;
+}
+
+.background-is-red {
+  background-color: $red !important;
+}
+
+.background-is-danger {
+  background-color: $red !important;
+}
+
+.background-is-turquoise {
+  background-color: $turquoise !important;
+}
+
+.background-is-primary {
+  background-color: $turquoise !important;
+}
+
+.background-is-yellow {
+  background-color: $yellow !important;
+}
+
+.background-is-warning {
+  background-color: $yellow !important;
+}
+
+.full-height-percent {
+  height: 100% !important;
+}
+
+.full-height-vh {
+  height: 100vh !important;
+}
+
+.full-width-percent {
+  width: 100% !important;
+}
+
+.full-width-vw {
+  width: 100vw !important;
+}
+
+.circular-square {
+  img {
+    border-radius: 50%;
+  }
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.is-paddingless {
+
+  padding: 0 !important;
+
+  @include mobile {
+    padding: 0 !important;
+  }
+
+  @include tablet {
+    padding: 0 !important;
+  }
+
+  @include touch {
+    padding: 0 !important;
+  }
+
+  @include desktop {
+    padding: 0 !important;
+  }
+
+  @include widescreen {
+    padding: 0 !important;
+  }
+}
+
+.border-none {
+  border: 0px !important;
+  box-shadow: none;
+}
+
+.has-text-justify {
+  text-align: justify;
+}
+
+.hide {
+    display: none !important;
+}
+
+.center-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-none {
+    margin: 0px !important;
+}
+
+.margin-bottom-none {
+    margin-bottom: 0px !important;
+}
+
+.overlay-cover-grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

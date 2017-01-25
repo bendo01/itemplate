@@ -1,0 +1,141 @@
+.timeline {
+  float: left;
+  width: 90%;
+  margin: 10px 2%;
+  padding-left: 17px;
+  position: relative;
+  border-left: 1px solid $grey-light;
+  box-sizing: border-box;
+  &:before, &:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid $grey-light;
+    position: absolute;
+    left: -8px;
+    border-radius: 50%;
+  }
+  &:before {
+    top: -16px;
+  }
+  &:after {
+    bottom: -16px;
+  }
+  .list {
+
+    border: 1px solid $grey-light;
+    border-radius: $radius;
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background-color: $grey-light;
+      position: absolute;
+      top: 50%;
+      left: -21px;
+    }
+    &:after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: $grey-light;
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      left: -22px;
+    }
+  }
+}
+
+.timeline-description {
+  p {
+    margin-top: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.timeline-both-side {
+  float: left;
+  width: 96%;
+  margin: 20px 2% 50px;
+  position: relative;
+  box-sizing: border-box;
+  &:before {
+    background-color: $grey-light;
+    bottom: 0;
+    content: ' ';
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  &:after {
+    border-radius: 50%;
+    bottom: -18px;
+    content: '';
+    height: 18px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    width: 18px;
+    border: 2px solid $grey-light;
+  }
+  li {
+    position: relative;
+    float: left;
+    width: 100%;
+    .border-line {
+      background-color: $grey-light;
+      font-size: 1.4em;
+      height: 1px;
+      left: 50%;
+      margin-left: -8%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 8%;
+      z-index: 100;
+    }
+    &.opposite-side .border-line {
+      left: auto;
+      right: 50%;
+      margin-left: 0;
+      margin-right: -8%;
+    }
+    .border-line:before {
+      background-color: $grey-light;
+      content: '';
+      height: 7px;
+      position: absolute;
+      right: -4px;
+      top: -3px;
+      width: 7px;
+    }
+    &.opposite-side .border-line:before {
+      left: -4px;
+      right: auto;
+    }
+    .timeline-description {
+      border-radius: $radius;
+      border: 1px solid $grey-light;
+      float: left;
+      font-size: 13px;
+      padding: 10px;
+      position: relative;
+      width: 42%;
+    }
+    &.opposite-side .timeline-description {
+      float: right;
+    }
+  }
+}
