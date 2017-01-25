@@ -1,7 +1,3 @@
-body {
-    //background-color: #9055A2;
-}
-
 .site {
     display: flex;
     min-height: 100vh;
@@ -45,12 +41,12 @@ body {
   list-style: none;
   font-size: 13px;
   li {
-    display: inline-block;
+    display: flex;
     + li:before {
       content: ' » ';
     }
     i {
-      padding-top: 2px;
+      padding-top: 5px;
     }
   }
 }
@@ -87,4 +83,10 @@ body {
 
 .card-margin-top {
     margin-top: 29px !important;
+}
+
+.progress {
+    &.is-thin {
+      height: 0.438rem;
+    }
 }
