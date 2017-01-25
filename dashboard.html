@@ -8,7 +8,7 @@
     <meta name="application-name" content="iTemplate">
     <meta name="msapplication-TileImage" content="dist/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="dist/img/favicon/browserconfig.xml">
-    <meta name="description" content="iTemplate Website Home Page">
+    <meta name="description" content="iTemplate Website Dashboard Page">
     <meta name="keywords" content="template, administrator, admin, bulma">
     <meta name="google-site-verification" content="xjjhX3u2rUjjvMHTctnp2KU4tm7m96eC11MYNqpTfHE">
     <meta name="msvalidate.01" content="0DF0E21C652E22723705EF606751FF9E">
@@ -16,11 +16,11 @@
     <meta name="twitter:card" content="iTemplate" />
     <meta name="twitter:site" content="@bendo01" />
     <meta name="twitter:title" content="iTemplate Home Page" />
-    <meta property="og:description" content="iTemplate Website Home Page" />
+    <meta property="og:description" content="iTemplate Website Dashboard" />
     <meta property="og:title" content="Front Page" />
     <meta property="og:url" content="https://itemplate.ga" />
     <meta property="og:type" content="articles" />
-    <meta property="og:site_name" content="xSIA" />
+    <meta property="og:site_name" content="itemplate" />
     <meta property="og:image:url" content="img/whiteboks_logo.png" />
     <meta property="og:image:size" content="256" />
     <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicon/apple-touch-icon-57x57.png">
@@ -40,7 +40,7 @@
     <link rel="shortcut icon" href="dist/img/favicon//favicon.ico">
     <link rel="canonical" href="https://itemplate.ga"/>
     <link href="dist/css/app.css" rel="stylesheet">
-    <title>iTemplate Home</title>
+    <title>iTemplate Dashboard</title>
 </head>
 <body>
     <main class="site-content">
@@ -778,9 +778,47 @@
            <div class="tab-pane is-active" id="tab_menu">
                <div class="container-tab" id="container-menu">
                    <aside class="menu">
-                        <ul class="menu-list">
-                           <li class="single-list"><a href="index.html"><i class="fa fa-fw fa-home"></i> Homepage</a></li>
-                           <li class="single-list"><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+                       <p class="menu-label">
+                           <i class="fa fa-file-o" aria-hidden="true"></i> Page
+                       </p>
+                       <ul class="menu-list">
+                            <li class="single-list"><a href="index.html"><i class="fa fa-fw fa-home"></i> Homepage</a></li>
+                            <li class="single-list"><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+                            <li class="single-list"><a href="40x.html"><i class="fa fa-fw fa-file-o"></i> 40x Page</a></li>
+                            <li class="single-list"><a href="form.html"><i class="fa fa-fw fa-file-o"></i> Form</a></li>
+                       </ul>
+                       <p class="menu-label">
+                           <i class="fa fa-sitemap" aria-hidden="true"></i> Multi Level Menu
+                       </p>
+                       <ul class="menu-list">
+                           <li class="sub-menu-list">
+                               <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1</a>
+                               <ul class="menu-list" style="display:none;">
+                                   <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-1</a></li>
+                                   <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-2</a></li>
+                               </ul>
+                           </li>
+                           <li class="sub-menu-list">
+                               <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2</a>
+                               <ul class="menu-list" style="display:none;">
+                                   <li class="sub-menu-list">
+                                       <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1</a>
+                                       <ul class="menu-list" style="display:none;">
+                                           <li class="sub-menu-list">
+                                               <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1</a>
+                                               <ul class="menu-list" style="display:none;">
+                                                   <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-1</a></li>
+                                                   <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-2</a></li>
+                                               </ul>
+                                           </li>
+                                           <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-2</a></li>
+                                       </ul>
+                                   </li>
+                                   <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-2</a></li>
+                               </ul>
+                           </li>
+                           <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 3</a></li>
+                           <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 4</a></li>
                        </ul>
                    </aside>
                </div>
