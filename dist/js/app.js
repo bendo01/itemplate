@@ -10327,8 +10327,9 @@ $(document).ready(function () {
         $('#' + tabTargetActivate).siblings().removeClass('is-active');
         $('#' + tabTargetActivate).addClass('is-active');
     });
-    $('.sub-menu-list > .show-menu').on('click', function () {
-        $(this).siblings('.menu-list').toggleClass('hide');
+    $('li.sub-menu-list > a.show-menu').on('click', function () {
+        console.log('ditekan');
+        $(this).siblings('.menu-list').toggle('hide');
     });
     $('.modal-button').on('click', function () {
         var target = $(this).attr('data-target');
