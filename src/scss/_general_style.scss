@@ -64,7 +64,11 @@ body {
     margin-top: 28px;
 }
 
-.chatbox {
+.chatbox-conversation-container {
+    max-height: 75vh;
+}
+
+.chatbox-input-container {
     position: absolute;
     bottom: 0;
     width: 100%;

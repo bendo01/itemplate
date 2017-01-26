@@ -214,7 +214,7 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab-chatbot">
-                <div id="chatbot-conversation">
+                <div id="chatbot-conversation" class="chatbox-conversation-container">
                     <div class="card is-fullwidth background-none border-none">
                         <div class="card-content">
                             <div class="media">
@@ -380,20 +380,20 @@
                         </div>
                     </div>
                 </div>
-                <div id="chatbot-wrapper-input" class="chatbox">
+                <div id="chatbot-wrapper-input" class="chatbox-input-container">
                     <div class="columns">
                         <div class="column">
                             <div class="card background-none border-none is-fullwidth">
                                 <div class="card-content">
                                     <div class="control">
-                                        <textarea id="chatbox-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="Ask Chatbot" style="resize:none; max-height: 70px;"></textarea>
+                                        <textarea id="chatbox-input" class="input background-none is-expanded is-purple color-is-grey" type="text" placeholder="Ask Chatbot" style="resize:none; max-height: 70px;"></textarea>
                                     </div>
                                     <div class="control flex-is-justify-content-end">
-                                        <div class="columns is-gapless">
+                                        <div class="columns is-gapless is-mobile">
                                             <div class="column">
                                                 <a class="button is-primary is-fullwidth"><i class="fa fa-fw fa-commenting"></i></a>
                                             </div>
-                                            <div class="column is-narrow">
+                                            <div class="column is-narrow is-mobile">
                                                 <a class="button is-info"><i class="fa fa-fw fa-microphone"></i></a>
                                             </div>
                                         </div>
@@ -414,7 +414,7 @@
         "use strict";
         autosize($('#chatbox-input'));
         $('.container-tab').slimScroll({ height: '93vh' });
-        $('#chatbot-conversation').slimScroll({ height: '80vh' });
+        $('#chatbot-conversation').slimScroll({ height: '75vh' });
     });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
