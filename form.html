@@ -8,15 +8,15 @@
     <meta name="application-name" content="iTemplate">
     <meta name="msapplication-TileImage" content="dist/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="dist/img/favicon/browserconfig.xml">
-    <meta name="description" content="iTemplate Website Home Page">
+    <meta name="description" content="iTemplate Website Form Page">
     <meta name="keywords" content="template, administrator, admin, bulma">
     <meta name="google-site-verification" content="xjjhX3u2rUjjvMHTctnp2KU4tm7m96eC11MYNqpTfHE">
     <meta name="msvalidate.01" content="0DF0E21C652E22723705EF606751FF9E">
     <meta name="yandex-verification" content="01fa61993765259b">
     <meta name="twitter:card" content="iTemplate" />
     <meta name="twitter:site" content="@bendo01" />
-    <meta name="twitter:title" content="iTemplate Home Page" />
-    <meta property="og:description" content="iTemplate Website Home Page" />
+    <meta name="twitter:title" content="iTemplate Form Page" />
+    <meta property="og:description" content="iTemplate Website Form Page" />
     <meta property="og:title" content="Front Page" />
     <meta property="og:url" content="https://itemplate.ga" />
     <meta property="og:type" content="articles" />
@@ -40,7 +40,10 @@
     <link rel="shortcut icon" href="dist/img/favicon//favicon.ico">
     <link rel="canonical" href="https://itemplate.ga"/>
     <link href="dist/css/app.css" rel="stylesheet">
-    <title>iTemplate Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.css" rel="stylesheet">
+    <title>iTemplate Form</title>
 </head>
 <body>
     <main class="site-content">
@@ -56,101 +59,200 @@
                 </a>
             </div>
         </nav>
-        <div class="content-margin wrapper">
-            <div class="container is-fluid margin-none">
-                <section class="hero is-medium front-has-image-background" style="padding-top:43px;">
-                    <!-- Hero content: will be in the middle -->
-                    <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <h1 class="title color-is-white">
-                                iTemplate Admin
-                            </h1>
-                            <h2 class="subtitle color-is-white">
-                                Based On Bulma CSS Framework
-                            </h2>
-                        </div>
+        <div class="container is-fluid margin-none">
+            <section class="hero is-medium front-has-image-background" style="padding-top:43px;">
+                <!-- Hero content: will be in the middle -->
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title color-is-white">
+                            iTemplate Admin
+                        </h1>
+                        <h2 class="subtitle color-is-white">
+                            Based On Bulma CSS Framework
+                        </h2>
                     </div>
-                </section>
-                <section class="section">
-                    <div class="container">
-                        <div class="heading">
-                            <h3 class="title">Tools And Library</h3>
-                            <h4 class="subtitle">Tools And Library Used By iTemplate</h4>
-                        </div>
-                        <hr>
-                        <div class="flex-card-container">
-                            <!--start column with width is-3 -->
-                            <div class="card card-width-fix card-margin-top">
-                                <header class="card-header">
-                                    <h5 class="card-header-title flex-is-justify-content-center">Laravel Mix</h5>
-                                </header>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="has-text-justify">
-                                            Laravel Mix provides a clean, fluent API for defining basic Webpack build steps for your Laravel application. Mix supports several common CSS and JavaScript pre-processors
-                                        </p>
-                                        <a href="https://github.com/JeffreyWay/laravel-mix/tree/master/docs">Docs</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-width-fix card-margin-top">
-                                <header class="card-header">
-                                    <h5 class="card-header-title flex-is-justify-content-center">Bulma CSS Framework</h5>
-                                </header>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="has-text-justify">
-                                            A modern CSS framework based on Flexbox
-                                        </p>
-                                        <a href="http://bulma.io/">Docs</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-width-fix card-margin-top">
-                                <header class="card-header">
-                                    <h5 class="card-header-title flex-is-justify-content-center">jQuery 3</h5>
-                                </header>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="has-text-justify">
-                                            Query is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
-                                        </p>
-                                        <a href="https://jquery.com/">Docs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container is-fluid margin-none">
+                    <div class="heading">
+                        <h3 class="title">Form Page</h3>
+                        <h4 class="subtitle">Form Page Example</h4>
                     </div>
-                </section>
+                    <hr>
+                    <form>
+                        <div class="columns">
+                            <div class="column">
+                                <!--start card widget -->
+                                <div class="card is-fullwidth">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Form
+                                        </p>
+                                    </header>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <label class="label">Show Password</label>
+                                            <div class="control has-addons">
+                                                <input class="input is-expanded" type="password" placeholder="Password Input" id="password">
+                                                <a class="button" id="toggle-show-password">
+                                                    <i class="fa fa-fw fa-eye" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <label class="label">Date</label>
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="text" placeholder="Date input" id="datepicker">
+                                                <span class="icon is-small"><i class="fa fa-fw fa-calendar"></i></span>
+                                            </div>
+                                            <label class="label">Time</label>
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="text" placeholder="Time input" id="timepicker">
+                                                <span class="icon is-small"><i class="fa fa-fw fa-clock-o"></i></span>
+                                            </div>
+                                            <label class="label">Select 2</label>
+                                            <div class="control">
+                                                <select id="select-beast-empty-select2" class="is-fullwidth" data-placeholder="Select a person...">
+                                                    <option>Select dropdown</option>
+                                                    <option>options 1</option>
+                                                    <option>options 2</option>
+                                                    <option>options 3</option>
+                                                    <option>options 4</option>
+                                                    <option>options 5</option>
+                                                </select>
+                                            </div>
+                                            <label class="label">Select 2 Multiple</label>
+                                            <div class="control">
+                                                <select id="select-state-select2" class="is-fullwidth" data-placeholder="Select a person..." multiple="multiple">
+                                                    <option value="">Select a state...</option>
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="CA">California</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="DC">District of Columbia</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="MT">Montana</option>
+                                                    <option value="NE">Nebraska</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="NH">New Hampshire</option>
+                                                    <option value="NJ">New Jersey</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="PA">Pennsylvania</option>
+                                                    <option value="RI">Rhode Island</option>
+                                                    <option value="SC">South Carolina</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="VT">Vermont</option>
+                                                    <option value="VA">Virginia</option>
+                                                    <option value="WA">Washington</option>
+                                                    <option value="WV">West Virginia</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </select>
+                                            </div>
+                                            <label class="label">Markdown Editor</label>
+                                            <div class="control">
+                                                <textarea class="textarea" placeholder="Textarea" id="mytextarea"></textarea>
+                                            </div>
+                                            <label class="label">Ion Range Slider</label>
+                                            <div class="control">
+                                                <input type="text" id="example_irs" name="example_name" value="" class="input is-expanded" />
+                                            </div>
+                                            <br>
+                                            <label class="label">Ion Range Slider Min Max</label>
+                                            <div class="control">
+                                                <input type="text" id="example_irs_min_max" name="example_name" value="" class="input is-expanded" />
+                                            </div>
+                                            <br>
+                                            <div class="control">
+                                                <label class="checkbox">
+                                                    <input type="checkbox"> Remember Me
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input type="checkbox"> Remember You
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="question"> Yes
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="question"> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end card widget -->
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="control is-horizontal flex-is-justify-content-end">
+                                    <button class="button is-success"><i class="fa fa-fw fa-check"></i> Submit</button> &nbsp;
+                                    <a class="button is-danger"><i class="fa fa-fw fa-close"></i> Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer background-is-white site-footer">
+        <div class="container is-fluid">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>iTemplate</strong> &copy; 2016-2017 Develop By B.L.E.P
+                </p>
+                <p>
+                    <a class="icon" href="https://twitter.com/bendo01" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon" href="https://web.facebook.com/whiteboks" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon" href="https://plus.google.com/118005283534040499189" target="_blank">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon" href="https://id.linkedin.com/in/benny-leonard-enrico-panggabean-a480a024" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon" href="https://github.com/bendo01/itemplate" target="_blank">
+                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                    </a>
+                </p>
             </div>
         </div>
-        <footer class="footer background-is-white">
-            <div class="container is-fluid">
-                <div class="content has-text-centered">
-                    <p>
-                        <strong>iTemplate</strong> &copy; 2016-2017 Develop By B.L.E.P
-                    </p>
-                    <p>
-                        <a class="icon" href="https://twitter.com/bendo01" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a class="icon" href="https://web.facebook.com/whiteboks" target="_blank">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a class="icon" href="https://plus.google.com/118005283534040499189" target="_blank">
-                            <i class="fa fa-google" aria-hidden="true"></i>
-                        </a>
-                        <a class="icon" href="https://id.linkedin.com/in/benny-leonard-enrico-panggabean-a480a024" target="_blank">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a class="icon" href="https://github.com/bendo01/itemplate" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </main>
+    </footer>
     <aside class="background-is-black-transparent side-navigation right hide" id="side-navigation">
         <div class="tabs is-centered margin-bottom-none background-is-black-transparent" style="min-height:49px;">
             <ul style="border-bottom:0px;">
@@ -386,7 +488,7 @@
                             <div class="card background-none border-none is-fullwidth">
                                 <div class="card-content">
                                     <div class="control">
-                                        <textarea id="chatbox-input" class="input background-none is-expanded is-purple color-is-grey" type="text" placeholder="Ask Chatbot" style="resize:none; max-height: 70px;"></textarea>
+                                        <textarea id="chatbox-input" class="chatbox-input-textarea input background-none is-expanded is-purple color-is-grey-lighter" placeholder="Ask Chatbot"></textarea>
                                     </div>
                                     <div class="control flex-is-justify-content-end">
                                         <div class="columns is-gapless is-mobile">
@@ -414,7 +516,7 @@
         "use strict";
         autosize($('#chatbox-input'));
         $('.container-tab').slimScroll({ height: '93vh' });
-        $('#chatbot-conversation').slimScroll({ height: '70vh' });
+        $('#chatbot-conversation').slimScroll({ height: '75vh' });
     });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
@@ -427,6 +529,27 @@
         $(".data-attributes-line span").peity("line");
     });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        "use strict";
+        $("#select-beast-empty-select2").select2();
+        $("#select-state-select2").select2();
+        $("#example_irs").ionRangeSlider();
+        $("#example_irs_min_max").ionRangeSlider({
+            type: "double",
+            min: 1000000,
+            max: 2000000,
+            grid: true,
+            force_edges: true
+        });
+        var simplemde = new SimpleMDE({
+            element: document.getElementById("mytextarea")
+        });
+    });
+    </script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -435,5 +558,6 @@
     ga('create', 'UA-80445905-1', 'auto');
     ga('send', 'pageview');
     </script>
+
 </body>
 </html>
