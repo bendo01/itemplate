@@ -16,6 +16,8 @@ let mix = require('laravel-mix').mix;
  //mix.copy('node_modules/animate.css/animate.min.css', 'dist/css');
  mix.js('src/js/app.js', 'dist/js')
     .sass('src/scss/app.scss', 'dist/css');
+ mix.minify('dist/js/app.js');
+ mix.minify('dist/css/app.css');
  //mix.version(['dist/css/app.css', 'dist/js/app.js']);
 // Full API
 // mix.js(src, output);
