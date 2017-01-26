@@ -1,12 +1,32 @@
 body {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     flex-direction: column;
 }
 
 .site-content {
-    flex: 1;
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
 }
+
+.site-content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+
+@media (--break-lg) {
+  .site-content {
+    padding-top: var(--space-lg);
+  }
+  .site-content::after {
+    margin-top: var(--space-lg);
+  }
+}
+
 .wrapper {
     min-height: 70vh;
 }
@@ -69,7 +89,7 @@ body {
 }
 
 .chatbox-input-container {
-    position: absolute;
+    position: relative;;
     bottom: 0;
     width: 100%;
 }
@@ -94,4 +114,13 @@ body {
     &.is-thin {
       height: 0.438rem;
     }
+}
+
+.site-footer {
+    flex: none !important;
+}
+
+.chatbox-input-textarea {
+    resize: none;
+    max-height: 40px;
 }
