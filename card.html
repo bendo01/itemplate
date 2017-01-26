@@ -1531,7 +1531,7 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab_Chatbot">
-                <div id="Chatbot-conversation">
+                <div id="chatbot-conversation">
                     <div class="card is-fullwidth background-none border-none">
                         <div class="card-content">
                             <div class="media">
@@ -1696,13 +1696,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="Chatbot-wrapper-input" class="Chatbot-chatbox">
+                <div id="chatbot-wrapper-input" class="chatbox">
                     <div class="columns">
                         <div class="column">
                             <div class="card background-none border-none is-fullwidth">
                                 <div class="card-content">
                                     <div class="control">
-                                        <textarea id="Chatbot-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="ASk Chatbot" style="resize:none; max-height: 70px;"></textarea>
+                                        <textarea id="chatbox-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="Ask Chatbot" style="resize:none; max-height: 70px;"></textarea>
                                     </div>
                                     <div class="control flex-is-justify-content-end">
                                         <div class="columns is-gapless">
@@ -1725,9 +1725,15 @@
     <script src="dist/js/app.js"></script>
     <script src="dist/js/vendor/jquery.slimscroll.min.js"></script>
     <script src="dist/js/vendor/autosize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        "use strict";
+        autosize($('#chatbox-input'));
+        $('.container-tab').slimScroll({ height: '93vh' });
+        $('#chatbot-conversation').slimScroll({ height: '80vh' });
+    });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
-    <script type="text/javascript">$(document).ready(function() { $('.container-tab').slimScroll({ height: '93vh' });});</script>
-    <script type="text/javascript">$(document).ready(function() { $('#Chatbot-conversation').slimScroll({ height: '80vh' });});</script>
     <script type="text/javascript">
     $(document).ready(function(){
         "use strict";

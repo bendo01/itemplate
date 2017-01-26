@@ -214,7 +214,7 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab_Chatbot">
-                <div id="Chatbot-conversation">
+                <div id="chatbot-conversation">
                     <div class="card is-fullwidth background-none border-none">
                         <div class="card-content">
                             <div class="media">
@@ -380,13 +380,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="Chatbot-wrapper-input" class="Chatbot-chatbox">
+                <div id="chatbot-wrapper-input" class="chatbox">
                     <div class="columns">
                         <div class="column">
                             <div class="card background-none border-none is-fullwidth">
                                 <div class="card-content">
                                     <div class="control">
-                                        <textarea id="Chatbot-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="ASk Chatbot" style="resize:none; max-height: 70px;"></textarea>
+                                        <textarea id="chatbox-input" class="input background-none is-expanded is-purple color-is-grey-lighter" type="text" placeholder="Ask Chatbot" style="resize:none; max-height: 70px;"></textarea>
                                     </div>
                                     <div class="control flex-is-justify-content-end">
                                         <div class="columns is-gapless">
@@ -409,7 +409,31 @@
     <script src="dist/js/app.js"></script>
     <script src="dist/js/vendor/jquery.slimscroll.min.js"></script>
     <script src="dist/js/vendor/autosize.min.js"></script>
-    <script type="text/javascript">$(document).ready(function() { $('.container-tab').slimScroll({ height: '93vh' });});</script>
-    <script type="text/javascript">$(document).ready(function() { $('#Chatbot-conversation').slimScroll({ height: '80vh' });});</script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        "use strict";
+        autosize($('#chatbox-input'));
+        $('.container-tab').slimScroll({ height: '93vh' });
+        $('#chatbot-conversation').slimScroll({ height: '80vh' });
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        "use strict";
+        $(".data-attributes span").peity("donut");
+        $(".data-attributes-pie span").peity("pie");
+        $(".data-attributes-bar span").peity("bar");
+        $(".data-attributes-line span").peity("line");
+    });
+    </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-80445905-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 </html>
