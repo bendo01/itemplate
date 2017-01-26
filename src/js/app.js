@@ -13,13 +13,12 @@ $(document).ready(function() {
         $('#side-navigation').addClass('hide');
     });
     $('.trigger-tab').click(function() {
-        console.log('ditekan');
         $(this).parent().siblings().removeClass('is-active');
         $(this).parent().addClass('is-active');
         var clickElement = $(this).attr('id');
         var arrClickElementId = clickElement.split("-");
         var tabTargetActivate = arrClickElementId[1]+'-'+arrClickElementId[2];
-        $('#'+tabTargetActivate).siblings().removeClass('is-active');
+        $('.tab-pane').removeClass('is-active');
         $('#'+tabTargetActivate).addClass('is-active');
     });
     $('.show-menu').click(function() {
