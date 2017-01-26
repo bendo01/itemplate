@@ -12,25 +12,24 @@ $(document).ready(function() {
         $('html').removeClass('is-clipped');
         $('#side-navigation').addClass('hide');
     });
-    $('a.trigger_tab').on('click', function(){
+    $('.trigger-tab').click(function() {
         $(this).parent().siblings().removeClass('is-active');
         $(this).parent().addClass('is-active');
         var clickElement = $(this).attr('id');
-        var arrClickElementId = clickElement.split("_");
-        var tabTargetActivate = arrClickElementId[1]+'_'+arrClickElementId[2];
-        $('#'+tabTargetActivate).siblings().removeClass('is-active');
+        var arrClickElementId = clickElement.split("-");
+        var tabTargetActivate = arrClickElementId[1]+'-'+arrClickElementId[2];
+        $('.tab-pane').removeClass('is-active');
         $('#'+tabTargetActivate).addClass('is-active');
     });
-    $('li.sub-menu-list > a.show-menu').on('click', function(){
-        console.log('ditekan');
+    $('.show-menu').click(function() {
         $(this).siblings('.menu-list').toggle('hide');
     });
-    $('.modal-button').on('click', function(){
+    $('.modal-button').click(function() {
         var target = $(this).attr('data-target');
         $('html').addClass('is-clipped');
         $(target).addClass('is-active');
     });
-    $('.modal-background, .modal-close').on('click', function(){
+    $('.modal-background, .modal-close').click(function() {
         $('html').removeClass('is-clipped');
         $(this).parent().removeClass('is-active');
     });
@@ -40,12 +39,12 @@ $(document).ready(function() {
         $('.modal').removeClass('is-active');
     });
     */
-    $('.modal-card-head > .delete, .modal-card-foot > .close').on('click', function(){
+    $('.modal-card-head > .delete, .modal-card-foot > .close').click(function() {
         $('html').removeClass('is-clipped');
         $('.modal').removeClass('is-active');
     });
     //Notication Close Button
-    $('.delete').on('click', function(){
+    $('.delete').click(function() {
         if($(this).parent().hasClass('notification')) {
             $(this).parent().remove();
         }
