@@ -1,6 +1,6 @@
 {
     "name": "itemplate_bulma_css_framework_admin_template",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "iTemplate Using Bulma CSS Framework By Benny Leonard Enrico Panggabean",
     "main": "index.js",
     "scripts": {
