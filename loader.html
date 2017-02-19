@@ -77,7 +77,19 @@
                         <h4 class="subtitle">Blank Page Example</h4>
                     </div>
                     <hr>
-
+                    <div class="columns">
+                        <div class="column">
+                            <a class="button is-primary is-large modal-button" data-target="#modal">Button</a>
+                            <div class="modal" id="modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <!-- Any other Bulma elements you want -->
+                                    <p class="color-is-white">Sending Data</p>
+                                    <progress class="progress is-small is-primary" value="0" max="100" id="my-progress">15%</progress>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -363,16 +375,6 @@
         </div>
     </aside>
     <script src="dist/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        "use strict";
-        $(".data-attributes span").peity("donut");
-        $(".data-attributes-pie span").peity("pie");
-        $(".data-attributes-bar span").peity("bar");
-        $(".data-attributes-line span").peity("line");
-    });
-    </script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

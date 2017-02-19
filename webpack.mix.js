@@ -11,8 +11,7 @@ let mix = require('laravel-mix').mix;
  |
  */
  mix.copy('node_modules/font-awesome/fonts', 'dist/fonts');
- mix.copy('node_modules/jquery-slimscroll/jquery.slimscroll.min.js', 'dist/js/vendor');
- mix.copy('node_modules/autosize/dist/autosize.min.js', 'dist/js/vendor');
+ //mix.copy('node_modules/autosize/dist/autosize.min.js', 'dist/js/vendor');
  //mix.copy('node_modules/animate.css/animate.min.css', 'dist/css');
  mix.js('src/js/app.js', 'dist/js')
     .sass('src/scss/app.scss', 'dist/css');

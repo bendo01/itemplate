@@ -46,13 +46,13 @@
     <main class="site-content">
         <nav class="nav background-is-black-transparent is-fixed-nav">
             <div class="nav-left">
-                <a href="javascript:void(0)" class="nav-item color-is-white">
+                <a class="nav-item color-is-white">
                     <img src="dist/img/whiteboks_logo.png" alt="whiteboks logo">&nbsp; iTemplate
                 </a>
             </div>
             <div class="nav-right">
-                <a class="nav-item color-is-white full-height-percent" href="javascript:void(0)" id="menu-open" style="margin-left:auto;">
-                    <span class="icon" style="margin-left:auto;"><i class="fa fa-fw fa-bars"></i></span>
+                <a class="nav-item color-is-white full-height-percent" id="menu-open">
+                    <span class="icon"><i class="fa fa-fw fa-bars"></i></span>
                 </a>
             </div>
         </nav>
@@ -292,70 +292,68 @@
         </div>
     </footer>
     <aside class="background-is-black-transparent side-navigation right hide" id="side-navigation">
-        <div class="tabs is-centered margin-bottom-none background-is-black-transparent" style="min-height:49px;">
-            <ul style="border-bottom:0px;">
+        <div class="tabs is-centered margin-bottom-none background-is-black-transparent">
+            <ul>
                 <li class="is-active">
-                    <a class="trigger-tab color-is-purple" id="trigger-tab-menu" style="border-bottom: 0px;"><i class="fa fa-fw fa-map-signs" aria-hidden="true"></i></a>
+                    <a class="trigger-tab color-is-purple" id="trigger-tab-menu"><i class="fa fa-fw fa-map-signs" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a class="trigger-tab color-is-turquoise" id="trigger-tab-chatbot" style="border-bottom: 0px;"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i></a>
+                    <a class="trigger-tab color-is-turquoise" id="trigger-tab-chatbot"><i class="fa fa-fw fa-microphone" aria-hidden="true"></i></a>
                 </li>
             </ul>
-            <a href="javascript:void(0)" class="close-side-bar-button color-is-danger" id="menu-close"><i class="fa fa-fw fa-close" aria-hidden="true"></i></a>
+            <a class="close-side-bar-button color-is-danger" id="menu-close"><i class="fa fa-fw fa-close" aria-hidden="true"></i></a>
         </div>
         <div class="tab-content">
             <div class="tab-pane is-active" id="tab-menu">
-                <div class="container-tab" id="container-menu">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            <i class="fa fa-file-o" aria-hidden="true"></i> Page
-                        </p>
-                        <ul class="menu-list">
-                            <li class="single-list"><a href="index.html"><i class="fa fa-fw fa-home"></i> Homepage</a></li>
-                            <li class="single-list"><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
-                            <li class="single-list"><a href="40x.html"><i class="fa fa-fw fa-file-o"></i> 40x Page</a></li>
-                            <li class="single-list"><a href="form.html"><i class="fa fa-fw fa-file-o"></i> Form</a></li>
-                            <li class="single-list"><a href="card.html"><i class="fa fa-fw fa-file-o"></i> Card</a></li>
-                            <li class="single-list"><a href="card-flex.html"><i class="fa fa-fw fa-file-o"></i> Card Flex</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            <i class="fa fa-sitemap" aria-hidden="true"></i> Multi Level Menu
-                        </p>
-                        <ul class="menu-list">
-                            <li class="sub-menu-list">
-                                <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1</a>
-                                <ul class="menu-list" style="display:none;">
-                                    <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-1</a></li>
-                                    <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-2</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-list">
-                                <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2</a>
-                                <ul class="menu-list" style="display:none;">
-                                    <li class="sub-menu-list">
-                                        <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1</a>
-                                        <ul class="menu-list" style="display:none;">
-                                            <li class="sub-menu-list">
-                                                <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1</a>
-                                                <ul class="menu-list" style="display:none;">
-                                                    <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-1</a></li>
-                                                    <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-2</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 3</a></li>
-                            <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 4</a></li>
-                        </ul>
-                    </aside>
-                </div>
+                <aside class="menu" id="container-menu">
+                    <p class="menu-label">
+                        <i class="fa fa-file-o" aria-hidden="true"></i> Page
+                    </p>
+                    <ul class="menu-list">
+                        <li class="single-list"><a href="index.html"><i class="fa fa-fw fa-home"></i> Homepage</a></li>
+                        <li class="single-list"><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+                        <li class="single-list"><a href="40x.html"><i class="fa fa-fw fa-file-o"></i> 40x Page</a></li>
+                        <li class="single-list"><a href="form.html"><i class="fa fa-fw fa-file-o"></i> Form</a></li>
+                        <li class="single-list"><a href="card.html"><i class="fa fa-fw fa-file-o"></i> Card</a></li>
+                        <li class="single-list"><a href="card-flex.html"><i class="fa fa-fw fa-file-o"></i> Card Flex</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        <i class="fa fa-sitemap" aria-hidden="true"></i> Multi Level Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li class="sub-menu-list">
+                            <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1</a>
+                            <ul class="menu-list" style="display:none;">
+                                <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-1</a></li>
+                                <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 1-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-list">
+                            <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2</a>
+                            <ul class="menu-list" style="display:none;">
+                                <li class="sub-menu-list">
+                                    <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1</a>
+                                    <ul class="menu-list" style="display:none;">
+                                        <li class="sub-menu-list">
+                                            <a class="show-menu"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1</a>
+                                            <ul class="menu-list" style="display:none;">
+                                                <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-1</a></li>
+                                                <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-1-2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-1-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 2-2</a></li>
+                            </ul>
+                        </li>
+                        <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Level 4</a></li>
+                    </ul>
+                </aside>
             </div>
             <div class="tab-pane" id="tab-chatbot">
-                <div id="chatbot-conversation" class="chatbox-conversation-container">
+                <aside id="chatbot-conversation" class="chatbox-conversation-container">
                     <div class="card is-fullwidth background-none border-none">
                         <div class="card-content">
                             <div class="media">
@@ -520,7 +518,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </aside>
                 <div id="chatbot-wrapper-input" class="chatbox-input-container">
                     <div class="columns">
                         <div class="column">
@@ -548,16 +546,6 @@
         </div>
     </aside>
     <script src="dist/js/app.js"></script>
-    <script src="dist/js/vendor/jquery.slimscroll.min.js"></script>
-    <script src="dist/js/vendor/autosize.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        "use strict";
-        autosize($('#chatbox-input'));
-        $('.container-tab').slimScroll({ height: '93vh' });
-        $('#chatbot-conversation').slimScroll({ height: '75vh' });
-    });
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peity/3.2.1/jquery.peity.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){

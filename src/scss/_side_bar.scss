@@ -28,12 +28,10 @@ $sidebar-z-index: 34 !default;
     border-bottom: 0px !important;
 }
 
-.container-tab {
-    margin: 7px;
+aside.menu {
+    padding: 7px;
     position: relative;
-    height: 93%;
-}
-.menu {
+    height: 80vh;
     .menu-label {
         i {
             padding-top: 3px;
@@ -58,4 +56,9 @@ $sidebar-z-index: 34 !default;
             }
         }
     }
+}
+
+aside.chatbox-conversation-container {    
+    position: relative;
+    height: 80vh;
 }

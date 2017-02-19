@@ -1,3 +1,15 @@
+.tabs {
+    min-height:49px;
+    ul {
+        border-bottom: 0px;
+        li {
+            a {
+                border-bottom: 0px;
+            }
+        }
+    }
+}
+
 .tab-content {
     & > .tab-pane {
         display: none;

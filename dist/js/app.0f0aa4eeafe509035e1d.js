@@ -10888,8 +10888,6 @@ var autosize = window.autosize = __webpack_require__(9);
 
 $(document).ready(function () {
     Ps.initialize(document.getElementById('container-menu'));
-    Ps.initialize(document.getElementById('chatbot-conversation'));
-    autosize(document.getElementById('chatbox-input'));
     $('#menu-open').click(function () {
         $('#side-navigation').removeClass('hide');
         $('html').addClass('is-clipped');
@@ -10899,29 +10897,29 @@ $(document).ready(function () {
         $('#side-navigation').addClass('hide');
     });
 
-    $('.trigger-tab').click(function () {
+    $('a.trigger_tab').on('click', function () {
         $(this).parent().siblings().removeClass('is-active');
         $(this).parent().addClass('is-active');
         var clickElement = $(this).attr('id');
-        var arrClickElementId = clickElement.split("-");
-        var tabTargetActivate = arrClickElementId[1] + '-' + arrClickElementId[2];
+        var arrClickElementId = clickElement.split("_");
+        var tabTargetActivate = arrClickElementId[1] + '_' + arrClickElementId[2];
         $('#' + tabTargetActivate).siblings().removeClass('is-active');
         $('#' + tabTargetActivate).addClass('is-active');
     });
 
-    $('.show-menu').click(function () {
-        $(this).siblings('.menu-list').toggle('hide');
+    $('.sub-menu-list > .show-menu').on('click', function () {
+        $(this).siblings('.menu-list').toggleClass('hide');
     });
-    $('.modal-button').click(function () {
+    $('.modal-button').on('click', function () {
         var target = $(this).attr('data-target');
         $('html').addClass('is-clipped');
         $(target).addClass('is-active');
     });
-    $('.modal-background, .modal-close').click(function () {
+    $('.modal-background, .modal-close').on('click', function () {
         $('html').removeClass('is-clipped');
         $(this).parent().removeClass('is-active');
     });
-    $('.message-header > .delete').click(function () {
+    $('.message-header > .delete').on('click', function () {
         $(this).parent().parent().remove();
     });
     $('.modal-card-head > .delete, .modal-card-foot > .close').on('click', function () {
@@ -10929,12 +10927,12 @@ $(document).ready(function () {
         $('.modal').removeClass('is-active');
     });
     //Notication Close Button
-    $('.delete').click(function () {
+    $('.delete').on('click', function () {
         if ($(this).parent().hasClass('notification')) {
             $(this).parent().remove();
         }
     });
-    $('#toggle-show-password').click(function () {
+    $('#toggle-show-password').on('click', function () {
         if ($('#toggle-show-password > i').hasClass('fa-eye')) {
             $('#toggle-show-password > i').removeClass('fa-eye');
             $('#toggle-show-password > i').addClass('fa-eye-slash');

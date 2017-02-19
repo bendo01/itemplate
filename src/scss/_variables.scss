@@ -108,3 +108,27 @@ $colorlists: (
 
 //Aside Variable
 $sidebar-width: 285px !default;
+
+$ps-border-radius: 6px !default;
+
+$ps-rail-default-opacity: 0 !default;
+$ps-rail-container-hover-opacity: 0.4 !default;
+$ps-rail-hover-opacity: 0.4 !default;
+
+$ps-bar-bg: transparent !default;
+$ps-bar-container-hover-bg: rgba(37, 49, 56, .9) !default;
+$ps-bar-hover-bg: rgba(37, 49, 56, .9) !default;
+$ps-rail-hover-bg: rgba(37, 49, 56, .9) !default;
+
+// Sizes
+$ps-scrollbar-x-rail-bottom: 0px !default;
+$ps-scrollbar-x-rail-height: 6px !default;
+$ps-scrollbar-x-bottom: 2px !default;
+$ps-scrollbar-x-height: 6px !default;
+$ps-scrollbar-x-hover-height: 6px !default;
+
+$ps-scrollbar-y-rail-right: 0 !default;
+$ps-scrollbar-y-rail-width: 6px !default;
+$ps-scrollbar-y-right: 2px !default;
+$ps-scrollbar-y-width: 6px !default;
+$ps-scrollbar-y-hover-width: 6px !default;
